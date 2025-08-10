@@ -32,27 +32,6 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
-			},
-			{
-				"name": "ForEach1",
-				"type": "ForEach",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
-				"dependsOn": [
-					{
-						"activity": "Get _Metadata1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"items": {
-						"value": "@activity('Get _Metadata1').output.childItems",
-						"type": "Expression"
-					}
-				}
 			}
 		],
 		"annotations": []
