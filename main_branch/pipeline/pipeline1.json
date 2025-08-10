@@ -18,7 +18,7 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
+							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
@@ -29,7 +29,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
+							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -49,13 +49,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "saleslt",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "salesltout1",
+						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					}
 				]
