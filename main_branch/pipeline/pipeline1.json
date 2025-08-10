@@ -50,7 +50,12 @@
 				"inputs": [
 					{
 						"referenceName": "Copy_activity",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Comtainer_name": "Project",
+							"folder_name": "input",
+							"file_name": "SalesLTProduct"
+						}
 					}
 				],
 				"outputs": [
