@@ -13,19 +13,19 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "saleslt",
+						"referenceName": "meta_act",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
+						"childItems",
+						"exists",
 						"itemName",
-						"itemType",
 						"itemType"
 					],
 					"storeSettings": {
-						"type": "AzureBlobStorageReadSettings",
+						"type": "AzureBlobFSReadSettings",
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -36,6 +36,8 @@
 			{
 				"name": "ForEach1",
 				"type": "ForEach",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Get _Metadata1",
