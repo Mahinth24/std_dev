@@ -14,7 +14,8 @@
 				"folderPath": "source",
 				"fileSystem": "project"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
+			"compressionCodec": "ZipDeflate",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
